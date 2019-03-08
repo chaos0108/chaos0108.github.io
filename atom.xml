@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://www.chaosii.com/"/>
-  <updated>2019-03-08T16:31:07.730Z</updated>
+  <updated>2019-03-08T16:50:11.026Z</updated>
   <id>https://www.chaosii.com/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://www.chaosii.com/2019/03/08/%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5/"/>
     <id>https://www.chaosii.com/2019/03/08/依赖注入/</id>
     <published>2019-03-08T15:09:18.000Z</published>
-    <updated>2019-03-08T16:31:07.730Z</updated>
+    <updated>2019-03-08T16:50:11.026Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h4><p>某个对象在程序运行时需要使用一些外部资源，即该对象和这些外部资源存在依赖关系。</p><h4 id="依赖倒置原则-Dependence-Inversion-Principle"><a href="#依赖倒置原则-Dependence-Inversion-Principle" class="headerlink" title="依赖倒置原则  Dependence Inversion Principle"></a>依赖倒置原则  Dependence Inversion Principle</h4><p>程序要依赖于抽象接口，不要依赖于具体实现。</p><p>核心是面向抽象（抽象类或接口）编程</p><h4 id="控制反转-Inversion-of-Control-IoC"><a href="#控制反转-Inversion-of-Control-IoC" class="headerlink" title="控制反转  Inversion of Control  IoC"></a>控制反转  Inversion of Control  IoC</h4><p>IoC容器负责控制对象的生命周期和对象之间的关系</p><p>控制对象生存周期的不再是应用它的对象，而是IoC容器。</p><p>对于某个具体的对象而言，本应是它控制它所依赖的对象，现在却统一由IoC容器控制，这种情形就是控制反转。</p><h4 id="依赖注入-Dependency-Injection-DI"><a href="#依赖注入-Dependency-Injection-DI" class="headerlink" title="依赖注入  Dependency Injection  DI"></a>依赖注入  Dependency Injection  DI</h4><p>被注入对象 依赖 IoC容器 配置 其依赖对象</p><p>容器动态地将某个依赖关系注入到组件之中 便于组件重用</p><p>“谁依赖谁，为什么需要依赖，谁注入谁，注入了什么”</p><p>谁依赖谁：应用程序依赖于IoC容器</p><p>为什么需要依赖：应用程序需要IoC容器提供对象需要的外部资源</p><p>谁注入谁：IoC容器注入应用程序 某个对象（应用程序依赖的对象）</p><p>注入了什么：注入某个对象所需要的外部资源</p>]]></content>
+    <content type="html"><![CDATA[<h4 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h4><p>某个对象在程序运行时需要使用一些外部资源，即该对象和这些外部资源存在依赖关系。</p><h4 id="依赖倒置原则-Dependence-Inversion-Principle"><a href="#依赖倒置原则-Dependence-Inversion-Principle" class="headerlink" title="依赖倒置原则  Dependence Inversion Principle"></a>依赖倒置原则  Dependence Inversion Principle</h4><p>程序要依赖于抽象接口，不要依赖于具体实现。</p><p>核心是面向抽象（抽象类或接口）编程</p><h4 id="控制反转-Inversion-of-Control-IoC"><a href="#控制反转-Inversion-of-Control-IoC" class="headerlink" title="控制反转  Inversion of Control  IoC"></a>控制反转  Inversion of Control  IoC</h4><p>IoC容器负责控制对象的生命周期和对象之间的关系</p><p>控制对象生存周期的不再是应用它的对象，而是IoC容器。</p><p>对于某个具体的对象而言，本应是它控制它所依赖的对象，现在却统一由IoC容器控制，这种情形就是控制反转。</p><h4 id="依赖注入-Dependency-Injection-DI"><a href="#依赖注入-Dependency-Injection-DI" class="headerlink" title="依赖注入  Dependency Injection  DI"></a>依赖注入  Dependency Injection  DI</h4><p>被注入对象 依赖 IoC容器 配置 其依赖对象</p><p>容器动态地将某个依赖关系注入到组件之中 便于组件重用</p><p>“谁依赖谁，为什么需要依赖，谁注入谁，注入了什么”</p><p>谁依赖谁：应用程序依赖于IoC容器</p><p>为什么需要依赖：应用程序需要IoC容器提供对象需要的外部资源</p><p>谁注入谁：IoC容器注入应用程序 某个对象（应用程序依赖的对象）</p><p>注入了什么：注入某个对象所需要的外部资源</p><h5 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h5><p><a href="https://www.jianshu.com/p/07af9dbbbc4b?utm_campaign=haruki&amp;utm_content=note&amp;utm_medium=reader_share&amp;utm_source=weixin_timeline&amp;from=timeline" target="_blank" rel="noopener">控制反转（IoC）与依赖注入（DI）</a></p><p><a href="https://www.cnblogs.com/liuslayer/p/8649912.html" target="_blank" rel="noopener">依赖注入和控制反转的理解，写的太好了。</a></p><p><a href="https://laravelacademy.org/post/9723.html" target="_blank" rel="noopener">[ Laravel 从学徒到工匠系列 ] 设计原则篇：依赖反转原则</a></p><p><a href="https://laravelacademy.org/post/9782.html" target="_blank" rel="noopener">依赖注入、控制反转、反射各个概念的理解和使用</a></p><p><a href="https://laravelacademy.org/post/769.html" target="_blank" rel="noopener">Laravel 服务容器实例教程 —— 深入理解控制反转（IoC）和依赖注入（DI）</a> </p>]]></content>
     
     <summary type="html">
     
